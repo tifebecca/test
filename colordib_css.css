@@ -1,0 +1,443 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "roboto";
+    font-weight: normal;
+}
+.slider_1{
+    width: 100%;
+    background-image: url(banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #381a01;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(216,152,101);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.dropdown{
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(216,152,101);
+    align-items: center;
+    margin: 0px 15px;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;     
+}
+.cta a{
+    text-decoration: none;
+    color:rgb(216,152,101);
+    border: 1px solid #DB9A64;
+    padding: 12px 40px;
+}
+.cta a:hover{
+    background-color: rgb(216,152,101);
+    color: white;
+}
+
+
+/* This is the beginning of tab responsive view */
+@media only screen and (max-width: 1024px){
+    nav .menu, .cta{
+        display: none;
+    }
+    .dropdown{
+        display: flex;
+        background: rgb(82, 79, 79);
+        width: 94%;
+        padding: 10px;
+        margin: auto;
+        justify-content: flex-end;
+        position: relative;
+    }
+    .dropdown p{
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .drop_list{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        background: rgb(82, 79, 79);
+        width: 97.95%;
+        padding: 10px;
+        display: none;
+    }
+    .dropdown ul li{
+        list-style: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: .8rem;
+    }
+    .dropdown ul li:hover{
+        color: black;
+        background-color: white;
+    }
+    .dropdown:hover .drop_list{
+        display: block;
+    }
+    .content_1 .man_pic{
+        display: none;
+    }
+    .slider_1 .content_1{
+        margin-top: 50px;
+    }
+    .slider_1{
+        height: 40vh;
+    }
+}
+
+/*This is the end of the first section responsiveness */
+/* This is the beginning of media query at 768px */
+@media only screen and (max-width: 768px){
+    .slider_1{
+        padding-bottom: 100px;
+    }
+}
+/* Tis is the end of tablet responsiveness */
+
+.content_1{
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    width: 90%;
+    margin: auto;
+}
+.slider_1 img{
+    width: 64%;
+}
+.content_1 .Header{
+    align-self: center;
+    height: 50vh;
+}
+.content_1 h1{
+    font-size: 4rem;
+    color: white;
+    font-weight: normal;
+}
+.content_1 h2{
+    font-size: 4rem;
+    color:  rgb(216,152,101);
+    font-weight: normal; 
+}
+.content_1 a{
+    text-decoration: none;
+    color:rgb(216,152,101);
+    border: 1px solid #DB9A64;
+    padding: 12px 40px;
+    transition: ease-in-out; 
+}
+.content_1 a:hover{
+    background-color: rgb(216,152,101);
+    color: white;
+}
+.cta_2{
+    margin: 50px 0px;
+}
+/* This is the beginning of mobile responsiveness */
+@media only screen and (max-width: 430px){
+    .content_1 h1, .content_1 h2{
+        font-size: 2rem;
+    }
+    
+}
+@media only screen and (max-width: 375px){
+    .slider_1{
+        display: none;
+    }
+    .content_1 h1, .content_1 h2{
+        background-color: red;
+    }
+}
+.slider_2{
+    background-color: #311E25;
+    padding: 90px 75px;
+    color: white;
+}
+.slider_2 h1{
+    font-size: 1.9rem;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.text_box{
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+}
+.text_box .text{
+    flex: 1;
+    font-weight: normal;
+    color: rgb(161, 161, 161);
+}
+
+.text_box .block{
+    flex: 1;
+}
+.skill_percent{
+    display: flex;
+    justify-content: space-between;
+}
+.indicator1{
+    width: 100%;
+    height: 6px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+.indicator1 .indicator_color{
+    width: 90%;
+    height: inherit; /* inherit is to make it take the height of the mother */
+    background: rgb(219,154,100);
+    border-radius: inherit;
+}
+.indicator1 .ux{
+    width: 70%;
+}
+.indicator1 .design{
+    width: 45%;
+}
+.part_2{
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.slider_2 a{
+    text-decoration: none;
+    color:rgb(216,152,101);
+    border: 1px solid #DB9A64;
+    padding: 12px 40px;
+    transition: ease-in-out; 
+}
+.slider_2 a:hover{
+    color: white;
+    background-color: rgb(216,152,101);
+}
+.slider_2 h1{
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.card{
+    padding: 20px 20px;
+}
+/* This is the beginning of the tab responsiveness */
+@media only screen and (max-width: 1024px){
+    .slider_2 h1{
+        width: 100%;
+    }
+}
+.slider_3{
+    background-color: rgb(59,41,48);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0px;
+}
+.card_box{
+    width: 90%;
+    color: white;
+}
+.card_file{
+    display: flex;
+    gap: 2rem;
+    margin-top: 50px;
+}
+.card{
+    flex: 1;
+    outline: solid 1px rgb(219,154,100);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    padding: 50px 20px;
+    transition: ease-in-out .5s;
+}
+.card h2{
+    color:  rgb(219,154,100);
+    font-weight: normal;
+    margin: 20px 0px;
+}
+.card p{
+    color: rgb(234, 229, 229);
+    font-weight: lighter;
+    text-align: center;
+    line-height: 30px;
+}
+/* this is for the h1 in slider 3 */
+.card_box h1{
+    font-size: 2.5rem;
+}
+/* this is the hover for the card */
+.card:hover{
+    transform: scale(1.1, 1.1);
+    /* background: green; */
+}
+/* this is "My Works" section of the page */
+/*This is the beginning of the tab responsiveness */
+.card{
+}
+.slider_4{
+    background-color: #311E25;
+    padding: 80px 0px;
+}
+
+.my_works{
+    width: 90%;
+    margin: auto;
+}
+.my_card{
+    width: 80%;
+    margin: 45px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.my_card h4{
+    color: white;
+    margin: 20px 0px 10px 0px;
+    font-weight: normal;
+}
+.my_card div{
+    margin-bottom: 60px;
+}
+
+.slider_4 h1{
+    color: white;  
+    font-size: 2rem;
+    
+}
+.slider_4 a{
+    text-decoration: none;
+    color: rgb(219,154,100);
+    font-size: 1.5rem;
+}
+.slider_4 a:hover{
+    text-decoration: underline;
+}
+.slider_4 .card_1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.slider_4 .second{
+    flex: 1;
+}
+.button{
+    text-decoration: none;
+    border: 1px solid;
+    padding: 15px 0px;
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: .2rem;
+    margin-top: -60px;
+}
+.button:hover{
+    text-decoration: none !important;
+    color: white;
+    background-color: rgb(219,154,100);
+    transition: ease-in-out;
+    border: none;
+}
+.testimonial_profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.slider_3 .card_file .testimonial_card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 70%;
+}
+.testimonial_card p{
+    text-align: left;
+}
+.last{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.contain{
+    width: 90%;
+    margin: 80px auto;
+    color: white;
+    
+}
+.containment{
+    color: white;   
+    width: 60%;
+}
+.containment h1{
+    font-size: 2.5rem; 
+}
+span{
+    color: #DB9A64;
+}
+.containment p{
+    color: rgb(234, 229, 229);
+    font-weight: lighter;
+    text-align: left;
+    line-height: 30px;
+    padding: 20px 0px;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+    padding: 60px 0px;
+    gap: 2rem;
+}
+.social_box{
+    color: #9C826A;
+    border: 1px solid #9C826A;
+    padding: 25px 40px; 
+    transition: ease-in-out;
+    flex: 1;
+}
+.social_box h3{
+    display: inline-block;
+}
+.social_box:hover{
+    background-color: #9C826A;
+    color: white;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    background-color: #9C826A;
+    color: #9C826A;
+    float: right;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: small;
+}
+
